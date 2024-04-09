@@ -40,7 +40,7 @@ const ListMovie = () => {
               alt=""
             />
           </div>
-          <div className="p-3 space-y-2">
+          <div className="p-3 space-y-2 ">
             <p className="font-medium">{movie.tenPhim}</p>
             <p className="text-sm text-gray-400">
               {movie.moTa.substring(0, 50)}...
@@ -51,10 +51,10 @@ const ListMovie = () => {
     });
   };
   return (
-    <div className="container mx-auto py-5">
+    <div className="container mx-auto py-5 ">
       <h3 className="text-xl font-medium"> List Movies </h3>
       {/* Danh sách phim */}
-      <div className="grid grid-cols-1 sm:grid-cols-4 gap-9">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-12  ">
         {/* card phim */}
         {renderListMovies()}
       </div>

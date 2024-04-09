@@ -45,10 +45,14 @@ const ListGhe = ({ maLichChieu }) => {
   };
 
   return (
-    <div className="w-3/5">
+    <div className="w-3/5 flex justify-center">
       <div className="grid grid-cols-10 gap-3">{renderListGhe()}</div>
     </div>
+    
   );
+  
 };
+
+
 
 export default ListGhe;

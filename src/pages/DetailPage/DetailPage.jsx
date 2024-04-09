@@ -29,16 +29,16 @@ const DetailPage = () => {
   return (
     <div>
       {/* Chi tiết phim */}
-      <div className="bg-gray-700 px-3 py-4">
+      <div className="bg-gray-700 px-3 py-4 ">
         <div className="flex space-x-4">
-          <div className="w-1/5">
+          <div className="w-1/5 ">
             <img src={dataMovie?.hinhAnh} className="w-64 h-96" alt="" />
           </div>
           <div className="w-4/5 text-white space-y-4">
             <p className="text-xl font-medium ">{dataMovie?.tenPhim}</p>
             <p className="text-sm">{dataMovie?.moTa}</p>
-            <button className="bg-blue-500 text-white p-2 rounded">
-              Mua vé
+            <button className="bg-blue-200 text-white p-2 rounded">
+              Purchase 
             </button>
           </div>
         </div>
