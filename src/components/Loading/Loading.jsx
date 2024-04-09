@@ -1,16 +1,22 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import Lottie from 'lottie-react';
+import loading from '../../assets/loading.json';
+
 
 const Loading = () => {
   const { isLoading } = useSelector((state) => state.loadingReducer);
   return (
     <div
-      className={`w-screen h-screen bg-black fixed text-white ${
+      className={`w-screen h-screen fixed text-white ${
         isLoading ? '' : 'hidden'
       } top-0 left-0 z-50`}
     >
       <div className="w-full h-full flex justify-center items-center">
-        <span>Loading ....</span>
+        <span>
+        <Lottie animationData={loading} />
+
+        </span>
       </div>
     </div>
   );

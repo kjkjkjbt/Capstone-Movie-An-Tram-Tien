@@ -17,3 +17,19 @@ export const loginThunk = createAsyncThunk(
     }
   },
 );
+
+export const signupThunk = createAsyncThunk(
+  'userReducer/signupThunk',
+  async (payload, { rejectWithValue }) => {
+    try {
+      const data = await userSer.postSignup(payload.value);
+      let infoUser = data.data.content;
+      payload.navigateCus();
+      message.success('Sign Up Successfully');
+      return infoUser;
+    } catch (error) {
+      message.error('fail');
+      return rejectWithValue(error);
+    }
+  },
+);

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { movieSer } from '../../../service/movieSer';
 import { useNavigate } from 'react-router-dom';
 
-const ListMoive = () => {
+const ListMovie = () => {
   const [dataMovieList, setDataMovieList] = useState();
   const navigate = useNavigate();
   const fetchListMovies = async () => {
@@ -52,7 +52,7 @@ const ListMoive = () => {
   };
   return (
     <div className="container mx-auto py-5">
-      <h3 className="text-xl font-medium">Danh sách phim</h3>
+      <h3 className="text-xl font-medium"> List Movies </h3>
       {/* Danh sách phim */}
       <div className="grid grid-cols-1 sm:grid-cols-4 gap-9">
         {/* card phim */}
@@ -74,4 +74,4 @@ const ListMoive = () => {
   );
 };
 
-export default ListMoive;
+export default ListMovie;

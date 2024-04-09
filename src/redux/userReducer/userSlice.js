@@ -34,6 +34,8 @@ const userSlice = createSlice({
         console.log('thất bại');
       });
   },
+
+  
 });
 
 export const { logOutAction } = userSlice.actions;

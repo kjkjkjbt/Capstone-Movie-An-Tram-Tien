@@ -1,14 +1,14 @@
 import React from 'react';
 import CarouselMovie from './CarouselMovie/CarouselMovie';
-import ListMoive from './ListMovie/ListMoive';
-import ReponsiveTailwinds from '../../components/ReponsiveTailwinds/ReponsiveTailwinds';
+import ListMovie from './ListMovie/ListMovie';
+// import ReponsiveTailwinds from '../../components/ReponsiveTailwinds/ReponsiveTailwinds';
 const HomePage = () => {
   return (
     <div>
-      <ReponsiveTailwinds />
+      {/* <ReponsiveTailwinds /> */}
       
       <CarouselMovie />
-      <ListMoive />
+      <ListMovie />
     </div>
   );
 };

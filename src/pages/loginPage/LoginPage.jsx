@@ -26,7 +26,7 @@ const LoginPage = () => {
       taiKhoan: yup
         .string()
         .required('Tài khoản không được để trống')
-        .min(4, 'Tài khoản ít phải là 4 chữ cái'),
+        .min(4, 'Tài khoản ít phải là 3 chữ cái'),
       matKhau: yup
         .string()
         .required('Mật Khẩu không được để trống')
@@ -43,7 +43,7 @@ const LoginPage = () => {
         <h3 className="text-2xl font-medium"> Sign In </h3>
         <div>
           <label className="text-sm font-medium" htmlFor="">
-            Tài Khoản
+            Username 
           </label>
           <input
             type="text"
@@ -56,7 +56,7 @@ const LoginPage = () => {
         </div>
         <div>
           <label className="text-sm font-medium" htmlFor="">
-            Mật khẩu
+            Password 
           </label>
           <input
             className="border rounded p-2 w-full"

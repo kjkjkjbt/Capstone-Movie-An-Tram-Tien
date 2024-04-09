@@ -12,6 +12,7 @@ import DetailPage from './pages/DetailPage/DetailPage';
 import ScreenPage from './pages/ScreenPage/ScreenPage';
 import Loading from './components/Loading/Loading';
 import CheckUser from './HOC/CheckUser';
+import SignupPage from './pages/signupPage/SignupPage';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         {/* auth template */}
         <Route path="/auth" element={<AuthTemplate />}>
           <Route path="login" element={<LoginPage />} />
+          <Route path='signup' element ={<SignupPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
