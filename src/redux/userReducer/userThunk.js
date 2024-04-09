@@ -9,10 +9,10 @@ export const loginThunk = createAsyncThunk(
       const data = await userSer.postLogin(payload.value);
       let infoUser = data.data.content;
       payload.navigateCus();
-      message.success('Đăng nhập thành công');
+      message.success('successful Sign in');
       return infoUser;
     } catch (error) {
-      message.error('Đăng nhập thất bại');
+      message.error('fail');
       return rejectWithValue(error);
     }
   },

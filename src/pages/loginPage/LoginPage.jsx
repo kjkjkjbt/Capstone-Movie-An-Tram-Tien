@@ -40,7 +40,7 @@ const LoginPage = () => {
         action=""
         className="border p-3 rounded-md space-y-3"
       >
-        <h3 className="text-2xl font-medium">Đăng nhập</h3>
+        <h3 className="text-2xl font-medium"> Sign In </h3>
         <div>
           <label className="text-sm font-medium" htmlFor="">
             Tài Khoản
@@ -68,7 +68,7 @@ const LoginPage = () => {
           <p className="text-red-500  h-3">{formLogin.errors.matKhau}</p>
         </div>
         <button className="bg-blue-500 text-white rounded p-2 ">
-          Đăng nhập
+          Sign In 
         </button>
       </form>
     </div>

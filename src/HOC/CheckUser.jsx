@@ -8,7 +8,7 @@ const CheckUser = ({ children }) => {
 
   useEffect(() => {
     if (!infoUser) {
-      message.error('Vui lòng đăng nhập để được đặt vé');
+      message.error('Please Sign In to book tickets');
       navigate('/auth/login');
     }
   }, []);

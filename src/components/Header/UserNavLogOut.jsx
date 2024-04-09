@@ -11,9 +11,12 @@ const UserNavLogOut = () => {
         }}
         className="bg-blue-600 text-white p-2 rounded"
       >
-        Đăng Nhập
+        Sign In 
       </button>
-      <button className="bg-green-600 text-white p-2 rounded">Đăng Ký</button>
+      <button onClick={()=>{
+        navigate ('/auth/register')
+      }} 
+      className="bg-green-600 text-white p-2 rounded"> Sign Up </button>
     </div>
   );
 };

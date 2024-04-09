@@ -22,7 +22,7 @@ const CarouselMovie = () => {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative ">
       <Carousel ref={carouRef}>
         {/* Map  */}
 
