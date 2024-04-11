@@ -13,9 +13,9 @@ const movieSlice = createSlice({
     addGheAction: (state, action) => {
       let ghe = action.payload;
       let index = state.listGheDangDat.findIndex(
-        (gheDangDat) => gheDangDat.maGhe == ghe.maGhe,
+        (gheDangDat) => gheDangDat.maGhe === ghe.maGhe,
       );
-      if (index != -1) {
+      if (index !== -1) {
         // nếu ghế đó đã tồn tại trong list ghế đang đặt thì xóa nó đi
         state.listGheDangDat.splice(index, 1);
       } else {

@@ -19,9 +19,9 @@ const ListGhe = ({ maLichChieu }) => {
       let styleGheDaDat = 'bg-gray-500';
       style = styleGhe;
       let index = listGheDangDat.findIndex(
-        (gheDangDat) => ghe.maGhe == gheDangDat.maGhe,
+        (gheDangDat) => ghe.maGhe === gheDangDat.maGhe,
       );
-      if (index != -1) {
+      if (index !== -1) {
         style = styleGheDangDat;
       }
       if (ghe.daDat) {

@@ -10,6 +10,7 @@ const loadingSlice = createSlice({
   reducers: {
     turnOnLoading: (state, action) => {
       state.isLoading = true;
+      
     },
     turnOffLoading: (state, action) => {
       state.isLoading = false;

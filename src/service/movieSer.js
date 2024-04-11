@@ -20,5 +20,13 @@ export const movieSer = {
   getListGhe :(maLichChieu)=>{
     let uri =`/api/QuanLyDatVe/LayDanhSachPhongVe?MaLichChieu=${maLichChieu}`;
     return http.get(uri)
-  }
+  },
+  postListGhe :(data)=>{
+    let uri =  `/api/QuanLyDatVe/DatVe`;
+    return http.post(uri, data);
+  },
+  getListRap :(maHeThongRap)=>{
+    let uri =`/api/QuanLyRap/LayThongTinHeThongRap`;
+    return http.get(uri)
+  },
 };
