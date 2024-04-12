@@ -38,7 +38,7 @@ const DetailPageSchedule = ({ idMovie }) => {
         <NavLink
           to={`/screen/${dataLcp.maLichChieu}`}
           key={i}
-          className="border p-2 rounded"
+          className="border p-2 rounded space-x-4 space-y-4 text-rose-400	"
         >
           {dataLcp.ngayChieuGioChieu}
         </NavLink>
@@ -50,7 +50,7 @@ const DetailPageSchedule = ({ idMovie }) => {
     console.log('dataCumRapChieu: ', dataCumRapChieu);
     return dataCumRapChieu?.map((dataCumRap, i) => {
       return (
-        <div key={i} className="p-3 border">
+        <div key={i} className="p-3 border space-y-4  space-x-4 text-teal-500	">
           <p className="text-xl">{dataCumRap.tenCumRap}</p>
           <div>{renderLichChieuPhim(dataCumRap.lichChieuPhim)}</div>
         </div>

@@ -29,25 +29,25 @@ const formLogin = useFormik({
   return (
     <div className=''>
     <div className='border-collapse border border-slate-500 w-96 h-3/4 rounded-3xl pl-3  '>
-    <h1 className='text-center font-bold text-5xl'> vé</h1>
+    <h1 className='text-center font-bold text-3xl text-wrap text-rose-400 hover:text-green-300/65 cursor-progress	'> Movie Ticket  </h1>
     <div className='text-centre'>---------------------------------------------------------</div>
     <div className='pl-3  flex-auto h-12'>
-    <h3 className=' text-3xl'>cụm rạp :</h3> <h3></h3>
+    <h3 className=' text-2xl'> Cinema  :</h3> <h3></h3>
     </div>
     <div className='pl-3  flex-auto h-12'>
-    <h3 className=' text-3xl'>địa chỉ :</h3> <h3></h3>
+    <h3 className=' text-2xl'> Address :</h3> <h3></h3>
     </div>
     <div className='pl-3  flex-auto h-12'>
-    <h3 className=' text-3xl'>ngày giờ chiếu :</h3> <h3></h3>
+    <h3 className=' text-2xl'> Date & Show time  :</h3> <h3></h3>
     </div>
     <div className='pl-3  flex-auto h-12'>
-    <h3 className=' text-3xl'>rạp :</h3> <h3></h3>
+    <h3 className=' text-2xl'> Screen :</h3> <h3></h3>
     </div>
     <div className='pl-3  flex-auto h-12'>
-    <h3 className=' text-3xl'>tên phim :</h3> <h3></h3>
+    <h3 className=' text-2xl'> Movie's name  :</h3> <h3></h3>
     </div>
     <div className='pl-3  flex-auto h-12'>
-    <h3 className=' text-3xl'>chọn :</h3> <h3></h3>
+    <h3 className=' text-2xl'> Price :</h3> <h3></h3>
     </div>
     </div>
       

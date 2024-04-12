@@ -14,11 +14,11 @@ const Header = () => {
     }
   };
   return (
-    <div className="bg-gray-900 py-3 sticky top-0 z-40">
+    <div className="bg-black py-3 sticky top-0 z-40">
       <div className="container mx-auto flex justify-between items-center">
         <NavLink
           to={'/'}
-          className="text-white font-medium text-2xl hover:text-yellow-400"
+          className="text-white font-medium text-2xl hover:text-yellow-300"
         >
           HOME 
         </NavLink>

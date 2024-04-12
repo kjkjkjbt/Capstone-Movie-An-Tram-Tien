@@ -109,7 +109,7 @@ const SignupPage = () => {
          {/* tên Đăng kí */}
         <div>
           <label className="text-sm font-medium" htmlFor="">
-            tên đăng nhập
+            Username 
           </label>
           <input
             className="border rounded p-2 w-full"
