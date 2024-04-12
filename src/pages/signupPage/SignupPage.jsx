@@ -92,7 +92,7 @@ const SignupPage = () => {
             className="border rounded p-2 w-full"
             onChange={formSignup.handleChange}
           />
-          <p className="text-red-500 h-3">{formSignup.errors.hoTen}</p>
+          <p className="text-red-200 h-3">{formSignup.errors.hoTen}</p>
         </div>
         {/* mật khẩu  */}
         <div>
@@ -125,7 +125,7 @@ const SignupPage = () => {
         {/* số điện thoại */}
         <div>
           <label className="text-sm font-medium" htmlFor="">
-            Tel. Number
+            Tel.
           </label>
           <input
             className="border rounded p-2 w-full"
