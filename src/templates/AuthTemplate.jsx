@@ -14,13 +14,10 @@ const AuthTemplate = () => {
     }
   }, []);
   return (
-    <div className="flex w-screen h-screen">
-      <div className="w-1/2  h-full">
-        <div className="scale-50">
-          <Lottie animationData={iconlogin} />
-        </div>
-      </div>
-      <div className="w-1/2 flex justify-center items-center">
+    <div className="flex w-screen h-screen bg-cover bg-center relative" style={{ backgroundImage: `url('/img/myke-simon-atsUqIm3wxo-unsplash.jpg')` }}>
+      
+      <div className="absolute inset-0 bg-black opacity-70"></div> 
+      <div className="w-full flex justify-center items-center z-50">
         <Outlet />
       </div>
     </div>

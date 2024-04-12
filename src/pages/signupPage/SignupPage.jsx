@@ -64,12 +64,12 @@ const SignupPage = () => {
     validationSchema: yup.object().shape({
       taiKhoan: yup
         .string()
-        .required('Tài khoản không được để trống')
-        .min(4, 'Tài khoản ít phải là 3 chữ cái'),
+        .required('Mật khẩu không được để trống')
+        .min(4, 'Mật khẩu ít phải là 4 chữ cái'),
       matKhau: yup
         .string()
         .required('Mật Khẩu không được để trống')
-        .min(3, 'Mật khẩu ít phải là 3 chữ cái'),
+        .min(4, 'Mật khẩu ít phải là 4 chữ cái'),
     }),
   });
   return (
@@ -77,7 +77,7 @@ const SignupPage = () => {
       <form
         onSubmit={formSignup.handleSubmit}
         action=""
-        className="border p-3 rounded-md space-y-3"
+        className=" p-3 rounded-md space-y-3 relative bg-black bg-opacity-50 backdrop-blur-md p-8 rounded-lg"
       >
         <h3 className="text-2xl font-medium"> Sign up  </h3>
         {/* tên  */}
@@ -137,9 +137,15 @@ const SignupPage = () => {
           <p className="text-red-500  h-3">{formSignup.errors.soDt}</p>
         </div>
         {/* nút đăng ký */}
+        <div className='flex justify-between'> 
+
         <button className="bg-blue-500 text-white rounded p-2 ">
           Create Account 
         </button>
+        <button className='bg-blue-500 text-white rounded p-2'>
+        <NavLink to="/auth/login">Login now</NavLink>
+        </button>
+        </div>
 
         {/* điều khoản  */}
        <div className="text-center text-sm text-grey-dark mt-4">

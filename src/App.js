@@ -35,7 +35,7 @@ function App() {
         {/* auth template */}
         <Route path="/auth" element={<AuthTemplate />}>
           <Route path="login" element={<LoginPage />} />
-          <Route path='signup' element ={<SignupPage />} />
+          <Route path='register' element ={<SignupPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

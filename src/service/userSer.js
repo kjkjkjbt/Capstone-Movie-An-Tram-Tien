@@ -6,7 +6,7 @@ export const userSer = {
     return http.post(uri, data);
   },
   postSignup: (data) => {
-    let uri = 'api/QuanLyNguoiDung/DangKy';
+    let uri = '/api/QuanLyNguoiDung/DangKy';
     return http.post(uri, data);
   },
 };

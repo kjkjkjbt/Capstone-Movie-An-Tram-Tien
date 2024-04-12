@@ -3,23 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { movieSer } from '../../service/movieSer';
 import { NavLink } from 'react-router-dom';
 
-const items = [
-  {
-    key: '1',
-    label: 'Tab 1',
-    children: 'Content of Tab Pane 1',
-  },
-  {
-    key: '2',
-    label: 'bc 44',
-    children: 'Content of Tab Pane 2',
-  },
-  {
-    key: '3',
-    label: 'Tab 3',
-    children: 'Content of Tab Pane 3',
-  },
-];
+
 const DetailPageSchedule = ({ idMovie }) => {
   const [dataHeThongRap, setDataHeThongRap] = useState([]);
   const fetchDataSchedule = async () => {
@@ -32,13 +16,17 @@ const DetailPageSchedule = ({ idMovie }) => {
       console.log('error: ', error);
     }
   };
+  useEffect(() => {
+    fetchDataSchedule()
+  }, []);
   const renderLichChieuPhim = (dataLichChieuPhim) => {
     return dataLichChieuPhim.map((dataLcp, i) => {
       return (
         <NavLink
           to={`/screen/${dataLcp.maLichChieu}`}
           key={i}
-          className="border p-2 rounded"
+          className="border p-2 rounded text-white priority-class"
+          
         >
           {dataLcp.ngayChieuGioChieu}
         </NavLink>
@@ -50,9 +38,9 @@ const DetailPageSchedule = ({ idMovie }) => {
     console.log('dataCumRapChieu: ', dataCumRapChieu);
     return dataCumRapChieu?.map((dataCumRap, i) => {
       return (
-        <div key={i} className="p-3 border">
-          <p className="text-xl">{dataCumRap.tenCumRap}</p>
-          <div>{renderLichChieuPhim(dataCumRap.lichChieuPhim)}</div>
+        <div key={i} className="p-3 border text-white ">
+          <p className="text-xl my-4 text-amber-500">{dataCumRap.tenCumRap}</p>
+          <div >{renderLichChieuPhim(dataCumRap.lichChieuPhim)}</div>
         </div>
       );
     });
@@ -67,15 +55,17 @@ const DetailPageSchedule = ({ idMovie }) => {
       };
     });
   };
-  useEffect(() => {
-    fetchDataSchedule();
-  }, []);
+
   return (
-    <div className="container mx-auto py-8">
+    <div  className='bg-cover bg-center relative' style={{ backgroundImage: "url('/img/krists-luhaers-AtPWnYNDJnM-unsplash.jpg')" }}>
+      <div className="absolute inset-0 bg-gray-900 opacity-90 backdrop-filter backdrop-blur-md"></div>
+    <div className="container mx-auto py-8 " >
       <Tabs
+      className='text-white'
         tabPosition="left"
         defaultActiveKey="1"
         items={renderHeThongRap()}
+        tabBarStyle={{ color: 'white', fontWeight: 'bold' }}
       />
       <br />
       <br />
@@ -92,6 +82,7 @@ const DetailPageSchedule = ({ idMovie }) => {
       <br />
       <br />
       <br />
+    </div>
     </div>
   );
 };
