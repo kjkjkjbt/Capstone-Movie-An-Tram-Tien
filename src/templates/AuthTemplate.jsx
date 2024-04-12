@@ -14,13 +14,13 @@ const AuthTemplate = () => {
     }
   }, []);
   return (
-    <div className="flex w-screen h-screen">
-      <div className="w-1/2  h-full">
+    <div className="flex w-screen h-screen ">
+      <div className="w-1/2  h-full ">
         <div className="scale-50">
           <Lottie animationData={iconlogin} />
         </div>
       </div>
-      <div className="w-1/2 flex justify-center items-center">
+      <div className="w-1/2 flex justify-center items-center  ">
         <Outlet />
       </div>
     </div>

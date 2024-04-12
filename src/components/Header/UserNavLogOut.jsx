@@ -14,7 +14,7 @@ const UserNavLogOut = () => {
         Sign In 
       </button>
       <button onClick={()=>{
-        navigate ('/auth/register')
+        navigate ('/auth/signup')
       }} 
       className="bg-green-600 text-white p-2 rounded"> Sign Up </button>
     </div>
