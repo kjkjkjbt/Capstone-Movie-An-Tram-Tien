@@ -13,6 +13,7 @@ import ScreenPage from './pages/ScreenPage/ScreenPage';
 import Loading from './components/Loading/Loading';
 import CheckUser from './HOC/CheckUser';
 import SignupPage from './pages/signupPage/SignupPage';
+// import Ticket from './pages/ScreenPage/Ticket/Ticket';
 
 function App() {
   return (

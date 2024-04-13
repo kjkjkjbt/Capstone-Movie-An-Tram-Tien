@@ -20,10 +20,10 @@ export const PostListGheThunk = createAsyncThunk(
     try {
       const data = await movieSer.PostListGhe(payload.value);
       
-      let pushTiket = data.data.content;
+      let pushTicket = data.data.content;
       payload.navigateCus();
       message.success('buy Successfully');
-      return pushTiket;
+      return pushTicket;
     } catch (error) {
       message.error('fail');
       return rejectWithValue(error);
