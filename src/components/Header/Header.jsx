@@ -20,7 +20,7 @@ const Header = () => {
           to={'/'}
           className="text-white font-medium text-2xl hover:text-yellow-300"
         >
-          HOME 
+          𝓗𝓸𝓶𝓮  
         </NavLink>
         <div className="text-white">{renderUserNav()}</div>
       </div>
