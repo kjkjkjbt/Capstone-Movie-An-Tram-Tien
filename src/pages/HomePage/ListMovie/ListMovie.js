@@ -31,12 +31,12 @@ const ListMovie = () => {
             navigatePageDetail(movie.maPhim);
           }}
           key={movie.maPhim}
-          className="border rounded"
+          className="border rounded m-2 p-10 text-white  transition-all duration-500 bg-gradient-to-br to-white via-black from-red-500 bg-size-200 hover:bg-right-bottom"
         >
           <div className="h-96">
             <img
               src={movie.hinhAnh}
-              className="w-full h-full object-cover rounded"
+              className="w-full h-full object-cover rounded hover:bg-red-250"
               alt=""
             />
           </div>
@@ -52,7 +52,7 @@ const ListMovie = () => {
   };
   return (
     <div className="container mx-auto py-5 text-black  rounded bg-white ">
-      <h3 className=" font-medium  text-xl  "> List Movies </h3>
+      <h3 className=" font-medium  text-3xl  ">𝔏𝔦𝔰𝔱 𝔐𝔬𝔳𝔦𝔢  </h3>
       {/* Danh sách phim */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-12  ">
         {/* card phim */}

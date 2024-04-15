@@ -29,7 +29,7 @@ const DetailPage = () => {
   return (
     <div>
       {/* Chi tiết phim */}
-      <div className="bg-gray-700 px-3 py-4 ">
+      <div className="bg-gray-700 px-3 py-4 m-2 p-10 text-white  transition-all duration-500 bg-gradient-to-br to-white via-black from-red-500 bg-size-200 hover:bg-right-bottom ">
         <div className="flex space-x-4">
           <div className="w-1/5 ">
             <img src={dataMovie?.hinhAnh} className="w-64 h-96" alt="" />
@@ -37,7 +37,7 @@ const DetailPage = () => {
           <div className="w-4/5 text-white space-y-4">
             <p className="text-xl font-medium ">{dataMovie?.tenPhim}</p>
             <p className="text-sm">{dataMovie?.moTa}</p>
-            <button className="bg-blue-200 text-white p-2 rounded">
+            <button  className="bg-black text-white p-2 rounded">
               Purchase 
             </button>
           </div>
