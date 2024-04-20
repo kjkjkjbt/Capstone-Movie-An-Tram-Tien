@@ -4,6 +4,7 @@ import { getListGheThunk } from './movieThunk';
 const initialState = {
   listGhe: [],
   listGheDangDat: [], //77 , //78 //90
+  infoGhe : null
 };
 
 const movieSlice = createSlice({
@@ -30,6 +31,7 @@ const movieSlice = createSlice({
 
       let listGhe = infoScreenPage.danhSachGhe.slice(0, 100);
       state.listGhe = listGhe;
+      state.infoGhe = infoScreenPage.thongTinPhim
     });
   },
 });

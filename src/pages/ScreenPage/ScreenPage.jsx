@@ -1,3 +1,4 @@
+import InfoGhe from './Infoghe/InfoGhe';
 import ListGhe from './ListGhe/ListGhe';
 import {useParams} from 'react-router-dom'
 const ScreenPage = () => {
@@ -6,6 +7,7 @@ const ScreenPage = () => {
   return (
     <div className="flex">
       <ListGhe maLichChieu={maLichChieu} />
+      <InfoGhe/>
     </div>
   );
 };
