@@ -6,7 +6,7 @@ import {
 } from '../redux/loadingReducer/loadingSlice';
 
 export const BASE_URL = 'https://movienew.cybersoft.edu.vn';
-export const MA_NHOM = 'GP09';
+export const MA_NHOM = 'GP01';
 export const TOKEN_CYBER =
   // 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5Mb3AiOiJCb290Y2FtcCA2NCIsIkhldEhhblN0cmluZyI6IjAxLzA5LzIwMjQiLCJIZXRIYW5UaW1lIjoiMTcyNTE0ODgwMDAwMCIsIm5iZiI6MTY5NTkyMDQwMCwiZXhwIjoxNzI1Mjk2NDAwfQ.36nQu-fyhBElKov0sWvrvwuO832nQWmfRIHcRVPB7Mw';
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5Mb3AiOiJCb290Y2FtcCA2NCIsIkhldEhhblN0cmluZyI6IjA4LzA5LzIwNTAiLCJIZXRIYW5UaW1lIjoiNTAyNTc1MzYwMDAwMCIsIm5iZiI6NTA5NTkyMDQwMCwiZXhwIjo1MDI1OTAxMjAwfQ.NY6pCrANEpYEic4ZgE_uVjhqV4vWQgSq6aijhhh3_gc'
